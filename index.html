@@ -1,91 +1,92 @@
 <!doctype>
-<html>
+<html lang="ko">
+
 <head>
     <meta charset="utf-8">
     <style>
-        .contatiner{
-            display: flex;
-        }
         #header{
+            display: flex;
             background-color: #045D8B;
             color: white;
             width: 501px;
             height: 60px;
-            text-align: center;
+            justify-content: center;
+            align-items: center;
         }
         #login{
             position: absolute;
             color: white;
             border: 1px solid #045D8B;
             left: 450px;
-            top: 5px;
         }
-        .content{
+        .noticeboard{
             display:flex;
             flex-direction: column;
             border: 1px solid #045D8B;
-            width: 500px;
-        }
-        .content title{
-            border-top: 1px solid #045D8B;
+            width: 400px;
+            align-items: center;
+            margin: 50px;
         }
         footer{
             display: flex;
             justify-content: space-around;
             flex-direction: row;
+            width: 501px;
+        }
+        .item{
+            border: 1px solid #045D8B;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div id="header">
-            AJOU Memo
-            <div id="login">Log In</div>
-        </div>
-        <section class="content">
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>  
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>
-            <div class="title">
-                아주 비기너 참여하시는..
-                <div class="date">12/18</div>
-                <div class="writer">익명</div>
-            </div>
-        </section>
-        <footer>
-            <div class="item">1</div>
-            <div class="item">2</div>
-            <div class="item">3</div>
-            <div class="item">4</div>
-            <div class="item">5</div>
-            <div class="item">6</div>
-            <div class="item">7</div>
-            <div class="item">8</div>
-            <div class="item">9</div>
-        </footer>
+    <div id="header">
+        AJOU Memo
+        <div id="login">Log In</div>
     </div>
+    <div class="noticeboard">
+        <div class="content">
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>  
+        </div>
+        <div class="content">    
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>
+        </div>
+        <div class="content"> 
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>
+        </div>
+        <div class="content">
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>
+        </div>
+        <div class="content">
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>
+        </div>
+        <div class="content">    
+            <div class="title">아주 비기너 참여하시는..</div>
+            <div class="date">12/18</div>
+            <div class="writer">익명</div>
+        </div>
+    </div>
+        
+    <footer>
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+    </footer>
 </body>
 </html>
 
