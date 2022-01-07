@@ -19,21 +19,48 @@
             border: 1px solid #045D8B;
             left: 450px;
         }
-        .noticeboard{
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        .board_list_head{
+            width: 550px;
+            margin-top: 30px;
+            margin-bottom: -40px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .board_list_body{
             display:flex;
             flex-direction: column;
             border: 1px solid #045D8B;
+            border-bottom: none;
             width: 400px;
-            align-items: center;
             margin: 50px;
+        }
+        .board_list_body .content{
+            display: flex;
+            flex-direction: row;
+            border-bottom: 1px solid #045D8B;
+            padding: 20px;
+        }
+        .board_list_body .date{
+            width: 15%;
+        }
+        .board_list_body .title{
+            width: 70%;
+            text-align: center;
+        }
+        .board_list_body .writer{
+            width: 15%;
         }
         footer{
             display: flex;
-            justify-content: space-around;
+            justify-content: center;
             flex-direction: row;
             width: 501px;
         }
-        .item{
+        .num{
             border: 1px solid #045D8B;
         }
     </style>
@@ -43,49 +70,59 @@
         AJOU Memo
         <div id="login">Log In</div>
     </div>
-    <div class="noticeboard">
-        <div class="content">
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>  
-        </div>
-        <div class="content">    
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>
-        </div>
-        <div class="content"> 
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>
-        </div>
-        <div class="content">
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>
-        </div>
-        <div class="content">
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>
-        </div>
-        <div class="content">    
-            <div class="title">아주 비기너 참여하시는..</div>
-            <div class="date">12/18</div>
-            <div class="writer">익명</div>
+    <div class="board_list_wrap">
+        <div class="borad_list">
+            <div class="board_list_head">
+                자유게시판
+                <input type="submit" value="등록하기">
+            </div>
+            <div class="board_list_body">
+                <div class="content">
+                    <div class="date">12/18</div>
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>  
+                </div>
+                <div class="content">
+                    <div class="date">12/18</div>    
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>
+                </div>
+                <div class="content"> 
+                    <div class="date">12/18</div>
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>
+                </div>
+                <div class="content">
+                    <div class="date">12/18</div>
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>
+                </div>
+                <div class="content">
+                    <div class="date">12/18</div>
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>
+                </div>
+                <div class="content"> 
+                    <div class="date">12/18</div>   
+                    <div class="title"><a href="#">아주 비기너 참여하시는..</a></div>
+                    <div class="writer">익명</div>
+                </div>
+            </div>
         </div>
     </div>
         
     <footer>
-        <div class="item">1</div>
-        <div class="item">2</div>
-        <div class="item">3</div>
-        <div class="item">4</div>
-        <div class="item">5</div>
-        <div class="item">6</div>
-        <div class="item">7</div>
-        <div class="item">8</div>
-        <div class="item">9</div>
+        <div class="paging">
+            <a href="#" class="num">1</a>
+            <a href="#" class="num">2</a>
+            <a href="#" class="num">3</a>
+            <a href="#" class="num">4</a>
+            <a href="#" class="num">5</a>
+            <a href="#" class="num">6</a>
+            <a href="#" class="num">7</a>
+            <a href="#" class="num">8</a>
+            <a href="#" class="num">9</a>
+        </div>
     </footer>
 </body>
 </html>
