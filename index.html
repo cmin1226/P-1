@@ -19,9 +19,9 @@
             border: 1px solid #045D8B;
             left: 450px;
         }
-        a {
+        a{
+            color:inherit;
             text-decoration: none;
-            color: inherit;
         }
         .board_list_head{
             width: 550px;
@@ -63,12 +63,46 @@
         .num{
             border: 1px solid #045D8B;
         }
+        .side_list{
+            position: absolute;
+            display: none;
+            background-color: lightblue;
+            width: 180px;
+            height: 560px;
+            list-style: none;
+            padding-left: 0; 
+            top: 52px;
+        }
+        .side_link{
+            display: flex;
+            justify-content: center;
+            padding: 20px 30px;
+            color: white;
+        }
+        .side_link:hover{
+            background-color:lightskyblue;
+            border-radius: 4px;
+        }
+        .side_toogleBtn{
+            color: white;
+            position: absolute;
+            font-size: 20px;
+            left: 20px;
+        }
+        .side_list.active{
+            display: inline-block;
+        }
     </style>
+    <script src="https://kit.fontawesome.com/dd28c94602.js" crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <div id="header">
         AJOU Memo
         <div id="login">Log In</div>
+        <a href="#" class="side_toogleBtn">
+            <i class="fas fa-bars"></i>
+        </a>
     </div>
     <div class="board_list_wrap">
         <div class="borad_list">
@@ -109,6 +143,13 @@
                 </div>
             </div>
         </div>
+        <ul class="side_list">
+            <li><a href="#" class="side_link">자유 게시판</a></li>
+            <li><a href="#" class="side_link">비밀 게시판</a></li>
+            <li><a href="#" class="side_link">정보 게시판</a></li>
+            <li><a href="#" class="side_link">홍보 게시판</a></li>
+            <li><a href="#" class="side_link">SW 게시판</a></li>
+        </ul>
     </div>
         
     <footer>
