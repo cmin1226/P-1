@@ -4,6 +4,22 @@ export default class{
     }
     async getHtml(){
         return
+        <div>
+        <div class="header">
+            <a href="/Menu" class="side_toogleBtn">
+                <i class="fas fa-bars"></i>
+                <ul class="side_list">
+                    <li><a href="#" class="side_link">자유 게시판</a></li>
+                    <li><a href="#" class="side_link">비밀 게시판</a></li>
+                    <li><a href="#" class="side_link">정보 게시판</a></li>
+                    <li><a href="#" class="side_link">홍보 게시판</a></li>
+                    <li><a href="#" class="side_link">SW 게시판</a></li>
+                </ul>
+            </a>
+            <a href="/" class="ajou_memo" data-link>AJOU Memo</a>
+            <a href="/login" class="login" data-link>Log In</a>
+        
+        </div>
             <div>
             <div class="board_list_wrap">
             <div class="borad_list">
@@ -60,6 +76,7 @@ export default class{
             </div>
             </footer>
             </div>
-            ;
+        </div>
+        ;
     }
 }

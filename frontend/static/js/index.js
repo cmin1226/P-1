@@ -1,7 +1,8 @@
 const { route } = require("express/lib/application");
 
-import Menu from "./pages/Menu.js";
-import Main from "./pages/Main.js";
+import Home from "./"
+import Menu from "./static/Menu.js";
+import Main from "./static/Main.js";
 
 const router = async () => {
     const routes = [
@@ -9,7 +10,10 @@ const router = async () => {
         {path: "/Menu", view: Menu},
         {path: "/Main", view: Main},
     ];
-}
+};
+
+const page = new match.route.view();
+document.querySelector("#root").innerHTML = await page.getHTML();
 
 const pageMatches = routes.map((route) => {
     return{
@@ -17,6 +21,7 @@ const pageMatches = routes.map((route) => {
         isMatch: route.path === location.pathname,
     };
 });
+
 let match = pageMatches.find((pageMatch) => pageMatch.isMatch);
 console.log(match.route.view());
 
